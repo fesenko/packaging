@@ -1,0 +1,8 @@
+{
+  "name": "Packaging",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-sass": "~0.7.3"
+  }
+}
