@@ -8,5 +8,6 @@
     "vendors",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {}
 }
