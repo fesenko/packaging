@@ -15,6 +15,24 @@ body {
   margin-bottom: 48px;
   background-image: url('../img/background.jpg');
   background-size: 100% auto;
+  position: relative;
+  overflow: auto;
+}
+
+.teaser {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  width: 60%;
+  text-align: right;
+
+  .teaser-title {
+    color: #f5f5f5;
+    font-size: 36px;
+    font-weight: 200;
+    text-shadow1: black 0 0 2px;
+    text-shadow: gray 0 0 10px;
+  }
 }
 
 .media-body {
