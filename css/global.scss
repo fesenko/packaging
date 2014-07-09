@@ -27,12 +27,17 @@ body {
   text-align: right;
 
   .teaser-title {
-    color: #f5f5f5;
     font-size: 36px;
     font-weight: 200;
-    text-shadow1: black 0 0 2px;
+    color: #f5f5f5;
     text-shadow: gray 0 0 10px;
+    text-shadow1: black 0 0 2px;
   }
+}
+
+.phone-number {
+  font-size: 16px;
+  margin-left: 5px;
 }
 
 .media-body {
