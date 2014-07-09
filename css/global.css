@@ -1,1 +1,1 @@
-@import url(normalize.css);@import url(main.css);
+@import url(normalize.css);@import url(main.css);body{padding-top:50px;padding-bottom:20px}body>.container{padding-left:40px;padding-right:40px}.billboard{background-color:#eee;height:500px;margin-top:48px;margin-bottom:48px;background-image:url("../img/background.jpg");background-size:100% auto}.media-body>a{margin-right:1em;margin-bottom:0.5em}.media-body .media-heading{margin-bottom:1em}.container .row{margin-bottom:2em}
