@@ -1,0 +1,13 @@
+.content {
+  font-size: 1.1em;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  @include border-radius(3px);
+  @include box-shadow(1px, 1px, 3px, rgb(211, 211, 211));
+}
+
+.content {
+  p {
+    text-indent: 20px;
+  }
+}
