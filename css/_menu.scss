@@ -13,22 +13,25 @@
 .top-menu__item {
   float: left;
   margin: 0;
-  height: 80px;
+  height: 140px;
   width: 20%;
   position: relative;
   display: inline-block;
   text-align: center;
   font-size: 120%;
+  padding-top: 16px;
 }
 
-.top-menu__item:before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
+.top-menu__item {
+  a {
+    text-decoration: underline;
+    vertical-align: middle;
+  }
 
-.top-menu__item > a {
-  text-decoration: underline;
-  vertical-align: middle;
+  img {
+    width: 64px;
+    padding: 0;
+    margin: 5px auto;
+    display: block;
+  }
 }
