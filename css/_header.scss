@@ -1,14 +1,31 @@
 .header {
+  font-size: 1em;
+  overflow: hidden;
+  margin-bottom: 15px;
   color: rgb(105, 95, 75);
-  font-size: 1.2em;
+
+  .info {
+    width: 50%;
+    margin-top: 5px;
+    padding-right: 0;
+  }
+
+  .logo {
+    width: 50%;
+  }
 }
 
-.header {
-  .contacts {
-    width: 40%;
-  }
+.top-menu {
+  text-align: right;
+  font-size: 1.1em;
 
-  .glyphicon {
-    margin-top: 5px;
+  a {
+    color: #033e6f;
+    text-decoration: underline;
   }
+}
+
+.contacts {
+  text-align: right;
+  margin-bottom: 20px;
 }

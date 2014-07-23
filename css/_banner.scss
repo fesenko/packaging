@@ -1,10 +1,10 @@
 .banner {
-  background-image: url('../img/meat.png');
+  background-image: url('../img/film1.jpg');
   background-color: #ffffff;
-  background-size: auto 400px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  margin-bottom: 55px;
+  background-size: 100% auto;
+  background-position: 0 50%;
+  background-repeat:no-repeat;
+  margin-bottom: 50px;
   position: relative;
   height: 400px;
 }
@@ -49,6 +49,31 @@
     top: 50%;
     right: 0;
     margin-top: -30px;
+    background-position: 0 0;
+  }
+
+  .markers {
+    width:100%;
+    margin:auto;
+    position: absolute;
+    left: 0;
+    bottom: -45px;
+    text-align: center;
+  }
+
+  .marker {
+    margin: 0 2px;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url('../img/markers.png');
+    background-repeat: no-repeat;
+    background-position: -14px 0;
+  }
+
+  .marker.selected {
     background-position: 0 0;
   }
 }
