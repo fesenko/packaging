@@ -23,8 +23,31 @@
 }
 
 map {
-  height: 484px;
-  width: 750px;
+  height: 500px;
+  width: 100%;
   display: block;
   margin: 20px 0;
+}
+
+.price-category {
+  margin-bottom: 40px;
+
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+table.prices {
+  td {
+    text-align: center;
+  }
+
+  th {
+    vertical-align: middle !important;
+    text-align: center;
+  }
+
+  th:first-child, td:first-child {
+    text-align: left;
+  }
 }

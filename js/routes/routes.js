@@ -12,6 +12,7 @@ define(['app'], function (app) {
                     templateUrl: 'views/catalog.html'
                 })
                 .when('/prices', {
+                    controller: 'PricesCtrl',
                     templateUrl: 'views/prices.html'
                 })
                 .when('/contacts', {
