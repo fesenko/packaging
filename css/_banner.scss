@@ -1,12 +1,14 @@
 .banner {
-  background-image: url('../img/film1.jpg');
+  background-image1: url('../img/background11.png');
+  background-image1: url('../img/back11.png');
+  background-image: url('../img/elitefon.png');
   background-color: #ffffff;
   background-size: 100% auto;
-  background-position: 0 50%;
+  background-position: 0 20%;
   background-repeat:no-repeat;
   margin-bottom: 50px;
   position: relative;
-  height: 400px;
+  height: 450px;
 }
 
 .banner:before {
