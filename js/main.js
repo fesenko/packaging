@@ -17,6 +17,12 @@
             'angular-route': {
                 'deps': ['angular']
             },
+            'ui.bootstrap': {
+                'deps': ['angular']
+            },
+            'ui-templates': {
+                'deps': ['angular']
+            },
             'maps': {
                 'exports': 'ymaps'
             }
