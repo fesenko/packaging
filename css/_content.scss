@@ -12,3 +12,19 @@
     text-indent: 20px;
   }
 }
+
+.contact-data {
+  margin: 0;
+  padding: 0;
+
+  > .row {
+    margin-bottom: 20px;
+  }
+}
+
+map {
+  height: 400px;
+  width: 600px;
+  display: block;
+  margin: 20px 0;
+}

@@ -10,6 +10,9 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap-css-only": "~3.2.0"
+    "bootstrap-css-only": "~3.2.0",
+    "angular": "~1.2.21",
+    "requirejs": "~2.1.14",
+    "angular-route": "~1.2.21"
   }
 }
