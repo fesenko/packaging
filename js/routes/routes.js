@@ -8,8 +8,13 @@ define(['app'], function (app) {
                     controller: 'MainCtrl',
                     templateUrl: 'views/main.html'
                 })
+                .when('/catalog', {
+                    templateUrl: 'views/catalog.html'
+                })
+                .when('/prices', {
+                    templateUrl: 'views/prices.html'
+                })
                 .when('/contacts', {
-                    controller: 'ContactsCtrl',
                     templateUrl: 'views/contacts.html'
                 })
                 .otherwise({redirectTo: '/'});
