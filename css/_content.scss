@@ -13,6 +13,10 @@
   }
 }
 
+.content.main {
+  font-size: 1.2em;
+}
+
 .contact-data {
   margin: 0;
   padding: 0;
@@ -40,11 +44,13 @@ map {
 table.prices {
   td {
     text-align: center;
+    font-size: 1.1em;
   }
 
   th {
     vertical-align: middle !important;
     text-align: center;
+    font-size: 1.2em;
   }
 
   th:first-child, td:first-child {

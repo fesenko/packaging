@@ -3,11 +3,11 @@ define([], function() {
 
     return function($scope) {
         $scope.slides = [{
-            image: 'img/slides/elitefon.png'
+            image: 'img/slides/slide1.png'
         }, {
-            image: 'img/slides/background11.png'
+            image: 'img/slides/slide2.png'
         }, {
-            image: 'img/slides/back11.png'
+            image: 'img/slides/slide3.png'
         }];
     };
 });
