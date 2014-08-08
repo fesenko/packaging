@@ -16,10 +16,14 @@ angular.module("template/carousel/carousel.html", []).run(["$templateCache", fun
 angular.module("template/views/catalog.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("template/views/catalog.html",
     "<div class=\"content\">\n" +
+    "    <h1>Каталог продукции</h1>\n" +
     "    <div class=\"catalog\">\n" +
     "        <div class=\"section\" ng-repeat=\"section in sections\">\n" +
-    "            <img ng-src=\"{{section.pic}}\"/>\n" +
-    "            <a ng-href=\"#/catalog/{{section.id}}\">{{section.title}}</a>\n" +
+    "            <a class=\"section__pic\" href=\"#\" ng-class=\"section.id\"></a>\n" +
+    "            <a class=\"section__title\" ng-href=\"#/catalog/{{section.id}}\">{{section.title}}</a>\n" +
+    "            <p>\n" +
+    "                {{section.description}}\n" +
+    "            </p>\n" +
     "        </div>\n" +
     "    </div>\n" +
     "</div>");
@@ -101,14 +105,11 @@ angular.module("template/views/prices.html", []).run(["$templateCache", function
     "        <h2>{{category.name}}, производство – {{category.country}}</h2>\n" +
     "\n" +
     "        <table class=\"table table-striped prices\" ng-repeat=\"kind in category.kinds\">\n" +
-    "            <col style=\"width: 25%\"/>\n" +
-    "            <col style=\"width: 20%\"/>\n" +
-    "            <col style=\"width: 15%\"/>\n" +
-    "            <col style=\"width: 20%\"/>\n" +
-    "            <col style=\"width: 20%\"/>\n" +
     "            <thead>\n" +
     "                <tr ng-class=\"colors[category.type]\">\n" +
-    "                    <th>{{category.name}},<br>{{kind.label}}</th>\n" +
+    "                    <th>Ширина,<br>мм</th>\n" +
+    "                    <th>Толщина,<br>мкм</th>\n" +
+    "                    <th ng-hide=\"{{category.type == 3}}\">Длина,<br>м</th>\n" +
     "                    <th>Цвет</th>\n" +
     "                    <th>Артикул<br>(этикетка)</th>\n" +
     "                    <th>Вес нетто<br>(без учета веса<br>шпули), кг</th>\n" +
@@ -117,7 +118,9 @@ angular.module("template/views/prices.html", []).run(["$templateCache", function
     "            </thead>\n" +
     "            <tbody>\n" +
     "                <tr ng-repeat=\"item in kind.items\">\n" +
-    "                    <td>{{item.sizes}}</td>\n" +
+    "                    <td>{{item.width}}</td>\n" +
+    "                    <td>{{item.thickness}}</td>\n" +
+    "                    <td ng-hide=\"{{category.type == 3}}\">{{item.length}}</td>\n" +
     "                    <td>{{item.color}}</td>\n" +
     "                    <td>{{item.article}}</td>\n" +
     "                    <td>{{item.weight}}</td>\n" +
