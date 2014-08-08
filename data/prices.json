@@ -9,98 +9,112 @@
                     "label": "8 мкм",
                     "items": [
                         {
-                            "sizes": "250 мм, 800 м",
+                            "width": 250,
+                            "length": 800,
                             "color": "шампань",
                             "article": "Р890",
-                            "weight": "2.00",
-                            "price": "255.00"
+                            "weight": 2,
+                            "price": 255.00,
+                            "thickness": 8
                         },
                         {
-                            "sizes": "280 мм, 800 м",
+                            "width": 280,
+                            "length": 800,
                             "color": "шампань",
                             "article": "Р890",
-                            "weight": "2.24",
-                            "price": "286.00"
+                            "weight": 2.24,
+                            "price": 286.00,
+                            "thickness": 8
                         },
                         {
-                            "sizes": "300 мм, 800 м",
+                            "width": 300,
+                            "length": 800,
                             "color": "шампань",
                             "article": "Р890",
-                            "weight": "2.40",
-                            "price": "306.00"
+                            "weight": 2.40,
+                            "price": 306,
+                            "thickness": 8
                         },
                         {
-                            "sizes": "350 мм, 800 м",
+                            "width": 350,
+                            "length": 800,
                             "color": "шампань",
                             "article": "Р890",
-                            "weight": "2.80",
-                            "price": "357.00"
+                            "weight": 2.80,
+                            "price": 357.00,
+                            "thickness": 8
                         },
                         {
-                            "sizes": "380 мм, 800 м",
+                            "width": 380,
+                            "length": 800,
                             "color": "шампань",
                             "article": "Р890",
-                            "weight": "3.04",
-                            "price": "388.00"
+                            "weight": 3.04,
+                            "price": 388.00,
+                            "thickness": 8
                         },
                         {
-                            "sizes": "400 мм, 800 м",
+                            "width": 400,
+                            "length": 800,
                             "color": "шампань",
                             "article": "Р890",
-                            "weight": "3.15",
-                            "price": "408.00"
+                            "weight": 3.15,
+                            "price": 408.00,
+                            "thickness": 8
                         },
                         {
-                            "sizes": "430 мм, 800 м",
+                            "width": 430,
+                            "length": 800,
                             "color": "шампань",
                             "article": "Р890",
-                            "weight": "3.40",
-                            "price": "439.00"
+                            "weight": 3.40,
+                            "price": 439.00,
+                            "thickness": 8
                         },
                         {
-                            "sizes": "450 мм, 800 м",
+                            "width": 450,
+                            "length": 800,
                             "color": "шампань",
                             "article": "Р890",
-                            "weight": "3.55",
-                            "price": "459.00"
-                        }
-                    ]
-                },
-                {
-                    "label": "12.5 мкм",
-                    "items": [
+                            "weight": 3.55,
+                            "price": 459.00,
+                            "thickness": 8
+                        },
                         {
-                            "sizes": "380 мм, 1500 м",
+                            "width": 380,
+                            "length": 1500,
                             "color": "шампань",
                             "article": "Р1415",
-                            "weight": "8.80",
-                            "price": "1144.00"
+                            "weight": 8.80,
+                            "price": 1144.00,
+                            "thickness": 12.5
                         },
                         {
-                            "sizes": "400 мм, 900 м",
+                            "width": 400,
+                            "length": 900,
                             "color": "шампань",
                             "article": "Р1390",
-                            "weight": "5.55",
-                            "price": "722.00"
+                            "weight": 5.55,
+                            "price": 722.00,
+                            "thickness": 12.5
                         },
                         {
-                            "sizes": "450 мм, 1300 м",
+                            "width": 450,
+                            "length": 1300,
                             "color": "шампань",
                             "article": "Р1313",
-                            "weight": "9.00",
-                            "price": "1170.00"
-                        }
-                    ]
-                },
-                {
-                    "label": "14 мкм",
-                    "items": [
+                            "weight": 9.00,
+                            "price": 1170.00,
+                            "thickness": 12.5
+                        },
                         {
-                            "sizes": "400 мм, 900 м",
+                            "width": 400,
+                            "length": 900,
                             "color": "шампань",
                             "article": "Р1490",
-                            "weight": "6.20",
-                            "price": "806.00"
+                            "weight": 6.20,
+                            "price": 806.00,
+                            "thickness": 14
                         }
                     ]
                 }
@@ -115,18 +129,22 @@
                     "label": "10 мкм",
                     "items": [
                         {
-                            "sizes": "450 мм, 600 м",
+                            "width": 450,
+                            "length": 600,
                             "color": "шампань",
                             "article": "TY880",
-                            "weight": "3.40",
-                            "price": "429.00"
+                            "weight": 3.40,
+                            "price": 429.00,
+                            "thickness": 10
                         },
                         {
-                            "sizes": "450 мм, 1500 м",
+                            "width": 450,
+                            "length": 1500,
                             "color": "шампань",
                             "article": "TY1015",
-                            "weight": "7.00",
-                            "price": "882.00"
+                            "weight": 7.00,
+                            "price": 882.00,
+                            "thickness": 10
                         }
                     ]
                 }
@@ -141,112 +159,130 @@
                     "label": "12.5 мкм",
                     "items": [
                         {
-                            "sizes": "200/200 мм, 650 м",
+                            "width": "200/200",
+                            "length": 650,
                             "color": "шампань",
                             "article": "MN7844CE125",
-                            "weight": "4.20",
-                            "price": "567.00"
+                            "weight": 4.20,
+                            "price": 567.00,
+                            "thickness": 12.5
                         },
                         {
-                            "sizes": "250/250 мм, 650 м",
+                            "width": "250/250",
+                            "length": 650,
                             "color": "шампань",
                             "article": "MN7844CE125",
-                            "weight": "5.25",
-                            "price": "709.00"
+                            "weight": 5.25,
+                            "price": 709.00,
+                            "thickness": 12.5
                         },
                         {
-                            "sizes": "300/300 мм, 650 м",
+                            "width": "300/300",
+                            "length": 650,
                             "color": "шампань",
                             "article": "MN7844CE125",
-                            "weight": "6.30",
-                            "price": "851.00"
+                            "weight": 6.30,
+                            "price": 851.00,
+                            "thickness": 12.5
                         },
                         {
-                            "sizes": "350/350 мм, 650 м",
+                            "width": "350/350",
+                            "length": 650,
                             "color": "шампань",
                             "article": "MN7844CE125",
-                            "weight": "7.35",
-                            "price": "993.00"
-                        }
-                    ]
-                },
-                {
-                    "label": "15 мкм",
-                    "items": [
-                        {
-                            "sizes": "150/150 мм, 600 м",
-                            "color": "шампань",
-                            "article": "MN7844CE5",
-                            "weight": "3.00",
-                            "price": "405.00"
+                            "weight": 7.35,
+                            "price": 993.00,
+                            "thickness": 12.5
                         },
                         {
-                            "sizes": "200/200 мм, 600 м",
+                            "width": "150/150",
+                            "length": 600,
                             "color": "шампань",
                             "article": "MN7844CE5",
-                            "weight": "4.00",
-                            "price": "537.00"
+                            "weight": 3.00,
+                            "price": 405.00,
+                            "thickness": 15
                         },
                         {
-                            "sizes": "250/250 мм, 600 м",
+                            "width": "200/200",
+                            "length": 600,
                             "color": "шампань",
                             "article": "MN7844CE5",
-                            "weight": "5.00",
-                            "price": "672.00"
+                            "weight": 4.00,
+                            "price": 537.00,
+                            "thickness": 15
                         },
                         {
-                            "sizes": "300/300 мм, 600 м",
+                            "width": "250/250",
+                            "length": 600,
                             "color": "шампань",
                             "article": "MN7844CE5",
-                            "weight": "6.00",
-                            "price": "805.00"
+                            "weight": 5.00,
+                            "price": 672.00,
+                            "thickness": 15
                         },
                         {
-                            "sizes": "350/350 мм, 600 м",
+                            "width": "300/300",
+                            "length": 600,
                             "color": "шампань",
                             "article": "MN7844CE5",
-                            "weight": "7.00",
-                            "price": "939.00"
+                            "weight": 6.00,
+                            "price": 805.00,
+                            "thickness": 15
                         },
                         {
-                            "sizes": "400/400 мм, 600 м",
+                            "width": "350/350",
+                            "length": 600,
                             "color": "шампань",
                             "article": "MN7844CE5",
-                            "weight": "8.00",
-                            "price": "1074.00"
+                            "weight": 7.00,
+                            "price": 939.00,
+                            "thickness": 15
                         },
                         {
-                            "sizes": "450/450 мм, 600 м",
+                            "width": "400/400",
+                            "length": 600,
                             "color": "шампань",
                             "article": "MN7844CE5",
-                            "weight": "9.00",
-                            "price": "1208.00"
+                            "weight": 8.00,
+                            "price": 1074.00,
+                            "thickness": 15
                         },
                         {
-                            "sizes": "500/500 мм, 600 м",
+                            "width": "450/450",
+                            "length": 600,
                             "color": "шампань",
                             "article": "MN7844CE5",
-                            "weight": "10.00",
-                            "price": "1345.00"
-                        }
-                    ]
-                },
-                {
-                    "label": "19 мкм",
-                    "items": [
+                            "weight": 9.00,
+                            "price": 1208.00,
+                            "thickness": 15
+                        },
                         {
-                            "sizes": "500/500 мм, 500 м",
+                            "width": "500/500",
+                            "length": 600,
+                            "color": "шампань",
+                            "article": "MN7844CE5",
+                            "weight": 10.00,
+                            "price": 1345.00,
+                            "thickness": 15
+                        },
+                        {
+                            "width": "500/500",
+                            "length": 500,
                             "color": "шампань",
                             "article": "MN7844CE190",
-                            "weight": "11.10",
-                            "price": "1489.00"
+                            "weight": 11.10,
+                            "price": 1489.00,
+                            "thickness": 19
                         },
                         {
-                            "sizes": "550/550 мм, 500 м",
+                            "width": "550/550",
+                            "length": 500,
                             "color": "шампань",
                             "article": "MN7844CE190",
-                            "weight": "12.30",
-                            "price": "1639.00"
+                            "weight": 12.30,
+                            "price": 1639.00,
+                            "thickness": 19
                         }
                     ]
                 }
@@ -261,44 +297,44 @@
                     "label": "17 мкм",
                     "items": [
                         {
-                            "sizes": "450 мм",
+                            "width": 450,
                             "color": "белый",
                             "article": "450*17*1,5",
-                            "weight": "1.50",
-                            "price": "132.00"
+                            "weight": 1.50,
+                            "price": 132.00,
+                            "thickness": 17
                         },
                         {
-                            "sizes": "450 мм",
+                            "width": 450,
                             "color": "белый",
                             "article": "450*17*2,0",
-                            "weight": "2.00",
-                            "price": "176.00"
+                            "weight": 2.00,
+                            "price": 176.00,
+                            "thickness": 17
                         },
                         {
-                            "sizes": "500 мм",
+                            "width": 500,
                             "color": "белый",
                             "article": "500*17*1,5",
-                            "weight": "1.50",
-                            "price": "851.00"
+                            "weight": 1.50,
+                            "price": 851.00,
+                            "thickness": 17
                         },
                         {
-                            "sizes": "500 мм",
+                            "width": 500,
                             "color": "белый",
                             "article": "500*17*2,0",
-                            "weight": "2.00",
-                            "price": "176.00"
-                        }
-                    ]
-                },
-                {
-                    "label": "23 мкм",
-                    "items": [
+                            "weight": 2.00,
+                            "price": 176.00,
+                            "thickness": 17
+                        },
                         {
-                            "sizes": "500 мм",
+                            "width": 500,
                             "color": "белый",
                             "article": "500*23",
-                            "weight": "13.50",
-                            "price": "1259.00"
+                            "weight": 13.50,
+                            "price": 1259.00,
+                            "thickness": 23
                         }
                     ]
                 }

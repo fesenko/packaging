@@ -1,6 +1,6 @@
 .content {
   font-size: 1.1em;
-  padding: 15px 30px;
+  padding: 15px 40px;
   background-color: rgb(255, 255, 255);
   @include border-radius(3px);
   @include box-shadow(0, 1px, 3px, rgba(0, 0, 0, 0.4));
@@ -23,6 +23,10 @@
 
   > .row {
     margin-bottom: 20px;
+  }
+
+  a {
+    text-decoration: underline;
   }
 }
 
@@ -52,15 +56,11 @@ table.prices {
     text-align: center;
     font-size: 1.2em;
   }
-
-  th:first-child, td:first-child {
-    text-align: left;
-  }
 }
 
 .catalog {
   overflow: hidden;
-  padding: 20px;
+  padding: 20px 0;
 
   .section {
     float: left;
