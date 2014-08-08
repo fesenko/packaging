@@ -66,8 +66,12 @@ table.prices {
     float: left;
     width: 50%;
     margin-bottom: 30px;
-    padding-right: 10px;
+    padding-right: 30px;
     overflow: hidden;
+
+    p {
+      text-align1: justify;
+    }
   }
 
   .section__title {
@@ -97,10 +101,12 @@ table.prices {
   }
   .section__pic.shrink {
     background-image: url('../img/catalog/shrink-main.jpg');
-    background-position: 0 50%;
+    background-size: auto 171px;
+    background-position: -60px 0;
   }
   .section__pic.vacuum_packages {
     background-image: url('../img/catalog/vacuum_packages-main.jpg');
+    background-size: auto 171px;
     background-position: 0 50%;
   }
 }

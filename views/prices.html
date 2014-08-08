@@ -5,9 +5,9 @@
         <table class="table table-striped prices" ng-repeat="kind in category.kinds">
             <thead>
                 <tr ng-class="colors[category.type]">
-                    <th>Ширина, мм</th>
-                    <th ng-hide="{{category.type == 3}}">Длина, м</th>
-                    <th>Толщина, мкм</th>
+                    <th>Ширина,<br>мм</th>
+                    <th>Толщина,<br>мкм</th>
+                    <th ng-hide="{{category.type == 3}}">Длина,<br>м</th>
                     <th>Цвет</th>
                     <th>Артикул<br>(этикетка)</th>
                     <th>Вес нетто<br>(без учета веса<br>шпули), кг</th>
@@ -17,8 +17,8 @@
             <tbody>
                 <tr ng-repeat="item in kind.items">
                     <td>{{item.width}}</td>
-                    <td ng-hide="{{category.type == 3}}">{{item.length}}</td>
                     <td>{{item.thickness}}</td>
+                    <td ng-hide="{{category.type == 3}}">{{item.length}}</td>
                     <td>{{item.color}}</td>
                     <td>{{item.article}}</td>
                     <td>{{item.weight}}</td>
