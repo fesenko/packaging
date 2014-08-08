@@ -24,8 +24,8 @@ module.exports = function(grunt) {
                 }
             },
             main: {
-                src: ['views/partials/ui-bootstrap-tpls/**/*.html'],
-                dest: 'views/partials/ui-bootstrap-tpls/ui-templates.js'
+                src: ['views/partials/ui-bootstrap-tpls/**/*.html', 'views/*.html'],
+                dest: 'views/ui-templates.js'
             }
         },
 

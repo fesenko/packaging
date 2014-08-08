@@ -1,3 +1,11 @@
 <div class="content">
-
+    <div class="catalog">
+        <div class="section" ng-repeat="section in sections">
+            <a class="section__pic" href="#" ng-class="section.id"></a>
+            <a class="section__title" ng-href="#/catalog/{{section.id}}">{{section.title}}</a>
+            <p>
+                {{section.description}}
+            </p>
+        </div>
+    </div>
 </div>

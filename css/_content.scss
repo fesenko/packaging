@@ -8,7 +8,7 @@
 }
 
 .content {
-  p {
+  > p {
     text-indent: 20px;
   }
 }
@@ -55,5 +55,52 @@ table.prices {
 
   th:first-child, td:first-child {
     text-align: left;
+  }
+}
+
+.catalog {
+  overflow: hidden;
+  padding: 20px;
+
+  .section {
+    float: left;
+    width: 50%;
+    margin-bottom: 30px;
+    padding-right: 10px;
+    overflow: hidden;
+  }
+
+  .section__title {
+    font-size: 1.2em;
+    text-decoration: underline;
+    vertical-align: top;
+  }
+
+  .section__pic {
+    display: inline-block;
+    width: 171px;
+    height: 180px;
+    float: left;
+    overflow: hidden;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-image: url('../img/catalog/pic.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  .section__pic.food_stretch {
+    background-image: url('../img/catalog/food_stretch-main.jpg');
+  }
+  .section__pic.pallet_stretch {
+    background-image: url('../img/catalog/pallet_stretch-main.jpg');
+  }
+  .section__pic.shrink {
+    background-image: url('../img/catalog/shrink-main.jpg');
+    background-position: 0 50%;
+  }
+  .section__pic.vacuum_packages {
+    background-image: url('../img/catalog/vacuum_packages-main.jpg');
+    background-position: 0 50%;
   }
 }

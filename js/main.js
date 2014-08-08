@@ -7,7 +7,7 @@
             'angular': vendors + 'angular/angular.min',
             'angular-route': vendors + 'angular-route/angular-route.min',
             'ui.bootstrap': vendors + 'angular-bootstrap/ui-bootstrap-tpls.min',
-            'ui-templates': '../views/partials/ui-bootstrap-tpls/ui-templates',
+            'ui-templates': '../views/ui-templates',
             'maps': 'http://api-maps.yandex.ru/2.1/?lang=ru_RU'
         },
         shim: {
