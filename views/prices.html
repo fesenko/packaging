@@ -1,6 +1,6 @@
 <div class="content">
     <div class="price-category" ng-repeat="category in categories">
-        <h2>{{category.name}}, производство – {{category.country}}</h2>
+        <h2 id="{{category.code}}">{{category.name}}, производство – {{category.country}}</h2>
 
         <table class="table table-striped prices" ng-repeat="kind in category.kinds">
             <thead>
