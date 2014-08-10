@@ -21,8 +21,8 @@
                     <td ng-hide="{{category.type == 3}}">{{item.length}}</td>
                     <td>{{item.color}}</td>
                     <td>{{item.article}}</td>
-                    <td>{{item.weight}}</td>
-                    <td>{{item.price}}</td>
+                    <td>{{item.weight | number : 2}}</td>
+                    <td>{{item.price | number : 2}}</td>
                 </tr>
             </tbody>
         </table>

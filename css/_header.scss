@@ -48,4 +48,20 @@
     top: 2px;
     margin-right: 5px;
   }
+
+  .icon {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background-size: 32px 32px;
+    margin-right: 5px;
+  }
+
+  .icon.mail {
+    background-image: url('../img/mail-icon.png');
+  }
+
+  .icon.phone {
+    background-image: url('../img/phone-icon.png');
+  }
 }

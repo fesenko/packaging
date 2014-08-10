@@ -23,6 +23,7 @@ angular.module("template/views/catalog.html", []).run(["$templateCache", functio
     "            <a class=\"section__title\" ng-href=\"#/catalog/{{section.id}}\">{{section.title}}</a>\n" +
     "            <p>\n" +
     "                {{section.description}}\n" +
+    "                <a ng-href=\"#/catalog/{{section.id}}\">Подробнее »</a>\n" +
     "            </p>\n" +
     "        </div>\n" +
     "    </div>\n" +
@@ -123,8 +124,8 @@ angular.module("template/views/prices.html", []).run(["$templateCache", function
     "                    <td ng-hide=\"{{category.type == 3}}\">{{item.length}}</td>\n" +
     "                    <td>{{item.color}}</td>\n" +
     "                    <td>{{item.article}}</td>\n" +
-    "                    <td>{{item.weight}}</td>\n" +
-    "                    <td>{{item.price}}</td>\n" +
+    "                    <td>{{item.weight | number : 2}}</td>\n" +
+    "                    <td>{{item.price | number : 2}}</td>\n" +
     "                </tr>\n" +
     "            </tbody>\n" +
     "        </table>\n" +

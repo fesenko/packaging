@@ -94,19 +94,28 @@ table.prices {
   }
 
   .section__pic.food_stretch {
-    background-image: url('../img/catalog/food_stretch-main.jpg');
+    background-image: url('../img/catalog/food_stretch/main.jpg');
   }
   .section__pic.pallet_stretch {
-    background-image: url('../img/catalog/pallet_stretch-main.jpg');
+    background-image: url('../img/catalog/pallet_stretch/main.jpg');
   }
   .section__pic.shrink {
-    background-image: url('../img/catalog/shrink-main.jpg');
+    background-image: url('../img/catalog/shrink/main.jpg');
     background-size: auto 171px;
     background-position: -60px 0;
   }
   .section__pic.vacuum_packages {
-    background-image: url('../img/catalog/vacuum_packages-main.jpg');
+    background-image: url('../img/catalog/vacuum_packages/main.jpg');
     background-size: auto 171px;
     background-position: 0 50%;
   }
+}
+
+.catalog-pic {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  max-width: 180px;
+  max-height: 180px;
+
 }
