@@ -66,7 +66,7 @@ angular.module("template/views/contacts.html", []).run(["$templateCache", functi
     "                <strong>Часы работы</strong>\n" +
     "            </div>\n" +
     "            <div class=\"col-md-10\">\n" +
-    "                Пн-Пт 10:00-18:00\n" +
+    "                Пн – Пт 10:00 – 18:00\n" +
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
@@ -103,7 +103,7 @@ angular.module("template/views/prices.html", []).run(["$templateCache", function
   $templateCache.put("template/views/prices.html",
     "<div class=\"content\">\n" +
     "    <div class=\"price-category\" ng-repeat=\"category in categories\">\n" +
-    "        <h2>{{category.name}}, производство – {{category.country}}</h2>\n" +
+    "        <h2 id=\"{{category.code}}\">{{category.name}}, производство – {{category.country}}</h2>\n" +
     "\n" +
     "        <table class=\"table table-striped prices\" ng-repeat=\"kind in category.kinds\">\n" +
     "            <thead>\n" +
