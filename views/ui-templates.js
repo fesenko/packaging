@@ -23,7 +23,7 @@ angular.module("template/views/catalog.html", []).run(["$templateCache", functio
     "            <a class=\"section__title\" ng-href=\"#/catalog/{{section.id}}\">{{section.title}}</a>\n" +
     "            <p>\n" +
     "                {{section.description}}\n" +
-    "                <a ng-href=\"#/catalog/{{section.id}}\">Подробнее »</a>\n" +
+    "                <a ng-href=\"#/catalog/{{section.id}}\"><nobr>Подробнее »</nobr></a>\n" +
     "            </p>\n" +
     "        </div>\n" +
     "    </div>\n" +
@@ -79,7 +79,7 @@ angular.module("template/views/main.html", []).run(["$templateCache", function($
   $templateCache.put("template/views/main.html",
     "<carousel interval=\"5000\">\n" +
     "    <slide ng-repeat=\"slide in slides\" active=\"slide.active\">\n" +
-    "        <img ng-src=\"{{slide.image}}\" style=\"margin: auto;\" height=\"450\"/>\n" +
+    "        <img ng-src=\"{{slide.image}}\" style=\"margin: auto;\" height=\"300\"/>\n" +
     "    </slide>\n" +
     "</carousel>\n" +
     "\n" +
@@ -102,6 +102,9 @@ angular.module("template/views/main.html", []).run(["$templateCache", function($
 angular.module("template/views/prices.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("template/views/prices.html",
     "<div class=\"content\">\n" +
+    "    <p class=\"last\" style=\"display: none;\">\n" +
+    "        <span class=\"glyphicon glyphicon-download\"></span> Скачайте <a href=\"/documents/multipack-price.doc\">Прайс-лист</a>\n" +
+    "    </p>\n" +
     "    <div class=\"price-category\" ng-repeat=\"category in categories\">\n" +
     "        <h2 id=\"{{category.code}}\">{{category.name}}, производство – {{category.country}}</h2>\n" +
     "\n" +
