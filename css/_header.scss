@@ -6,19 +6,29 @@
   color: rgb(105, 95, 75);
 
   .info {
-    width: 50%;
-    margin-top: 5px;
-    padding-right: 0;
+    margin-left: 363px;
+    overflow: hidden;
+  }
+}
+
+.nav-pills li a:hover {
+  background-color: transparent;
+}
+
+.nav > li {
+  a {
+    padding: 10px 40px;
   }
 
-  .logo {
-    width: 50%;
+  a:last-child {
+    padding-right: 0;
   }
 }
 
 .top-menu {
   text-align: right;
   font-size: 1.2em;
+  clear: right;
 
   a {
     color: #033e6f;
@@ -29,16 +39,16 @@
 .top-menu-contacts {
   font-size: 1.2em;
   text-align: right;
-  margin-bottom: 20px;
+  margin-top: 5px;
 
-  > div:before {
+  > li:before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
   }
 
-  > div > * {
+  > li > * {
     display: inline-block;
     vertical-align: middle;
   }
@@ -54,7 +64,7 @@
     width: 32px;
     height: 32px;
     background-size: 32px 32px;
-    margin-right: 5px;
+    margin: 0 5px 0 20px;
   }
 
   .icon.mail {

@@ -58,7 +58,7 @@ angular.module("template/views/contacts.html", []).run(["$templateCache", functi
     "                <strong>Электронная почта</strong>\n" +
     "            </div>\n" +
     "            <div class=\"col-md-10\">\n" +
-    "                <a href=\"mailto:multipack@yandex.ru\">multipack@yandex.ru</a>\n" +
+    "                <a href=\"mailto:multipack@yandex.ru\">info@mnogoplenki.ru</a>\n" +
     "            </div>\n" +
     "        </div>\n" +
     "        <div class=\"row\">\n" +
@@ -67,6 +67,11 @@ angular.module("template/views/contacts.html", []).run(["$templateCache", functi
     "            </div>\n" +
     "            <div class=\"col-md-10\">\n" +
     "                Пн – Пт 10:00 – 18:00\n" +
+    "            </div>\n" +
+    "        </div>\n" +
+    "        <div class=\"row\">\n" +
+    "            <div class=\"col-md-12\">\n" +
+    "                <button type=\"button\" class=\"btn btn-default\" ng-click=\"print()\">Печать</button>\n" +
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +

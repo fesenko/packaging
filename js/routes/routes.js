@@ -35,7 +35,11 @@ define(['app'], function (app) {
                     templateUrl: 'views/prices.html'
                 })
                 .when('/contacts', {
+                    controller: 'ContactsCtrl',
                     templateUrl: 'views/contacts.html'
+                })
+                .when('/map', {
+                    templateUrl: 'views/map.html'
                 })
                 .otherwise({redirectTo: '/'});
         }

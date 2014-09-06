@@ -1,9 +1,11 @@
 <div class="content">
-    <p class="last" style="display: none;">
-        <span class="glyphicon glyphicon-download"></span> Скачайте <a href="/documents/multipack-price.doc">Прайс-лист</a>
-    </p>
+    <div class="pull-right action-btn-container">
+        <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-download-alt"></span> Скачать
+        </button>
+    </div>
     <div class="price-category" ng-repeat="category in categories">
-        <h2 id="{{category.code}}">{{category.name}}, производство – {{category.country}}</h2>
+        <h1 anchor="{{category.anchor}}">{{category.name}}, производство – {{category.country}}</h1>
 
         <table class="table table-striped prices" ng-repeat="kind in category.kinds">
             <thead>

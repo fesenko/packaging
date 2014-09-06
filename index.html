@@ -12,8 +12,8 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="vendors/bootstrap-css-only/css/bootstrap.min.css">
-        <link rel="stylesheet" href="vendors/bootstrap-css-only/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="vendors/bootstrap-css-only/css/bootstrap.css">
+        <link rel="stylesheet" href="vendors/bootstrap-css-only/css/bootstrap-theme.css">
         <link rel="stylesheet" href="css/global.css">
         <script src="vendors/requirejs/require.js" data-main="js/main"></script>
     </head>
@@ -23,37 +23,31 @@
         <![endif]-->
 
         <div class="container header">
-            <div class="logo pull-left">
+
+            <div class="pull-left">
                 <a href="#">
-                    <img src="img/logo.png" alt="" />
+                    <img src="img/logo.png" alt="" width="336" height="81" />
                 </a>
             </div>
-            <div class="container info pull-right">
-                <div class="row top-menu-contacts">
-                    <div class="col-md-7">
+            <div class="info">
+                <ul class="nav nav-pills top-menu-contacts pull-right">
+                    <li>
                         <span class="icon mail"></span>
-                        <span>multipack@yandex.ru</span>
-                    </div>
-                    <div class="col-md-5">
+                        <span>info@mnogoplenki.ru</span>
+                    </li>
+                    <li>
                         <span class="icon phone"></span>
-                        <span>8 (495) 363-29-19</span>
-                    </div>
-                </div>
-                <div class="row top-menu">
-                    <div class="col-lg-3">
-                        <a href="#">Главная</a>
-                    </div>
-                    <div class="col-lg-3">
-                        <a href="#/catalog">Каталог</a>
-                    </div>
-                    <div class="col-lg-3">
-                        <a href="#/prices/all">Прайс-лист</a>
-                    </div>
-                    <div class="col-lg-3">
-                        <a href="#/contacts">Контакты</a>
-                    </div>
-                </div>
+                        <span>8 (495) 363-2919</span>
+                    </li>
+                </ul>
+                <ul class="nav nav-pills top-menu pull-right">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#/catalog">Каталог</a></li>
+                    <li><a href="#/prices/all">Прайс-лист</a></li>
+                    <li><a href="#/contacts">Контакты</a></li>
+                </ul>
             </div>
+
         </div>
 
         <div class="container" ng-view>

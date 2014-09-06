@@ -3,7 +3,7 @@
         {
             "name": "Пленка ПВХ стретч",
             "country": "Израиль",
-            "code": "food_stretch",
+            "anchor": "food_stretch",
             "type": 1,
             "kinds": [
                 {
@@ -124,7 +124,6 @@
         {
             "name": "Пленка ПВХ стретч",
             "country": "Тайвань",
-            "code": "food_stretch",
             "type": 1,
             "kinds": [
                 {
@@ -155,7 +154,7 @@
         {
             "name": "Пленка ПВХ термоусадочная, полурукав",
             "country": "Израиль",
-            "code": "shrink",
+            "anchor": "shrink",
             "type": 2,
             "kinds": [
                 {
@@ -294,7 +293,7 @@
         {
             "name": "Пленка ПЭ паллетная стретч",
             "country": "Россия",
-            "code": "pallet_stretch",
+            "anchor": "pallet_stretch",
             "type": 3,
             "kinds": [
                 {
