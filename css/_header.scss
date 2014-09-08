@@ -11,8 +11,11 @@
   }
 }
 
-.nav-pills li a:hover {
-  background-color: transparent;
+.nav-pills li {
+  a, a:hover, a:focus, a:active {
+    background-color: transparent;
+  }
+
 }
 
 .nav > li {

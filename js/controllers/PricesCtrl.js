@@ -12,6 +12,10 @@ define([], function() {
             success(function(data) {
                 $scope.categories = data.categories || [];
             });
+
+        $scope.download = function() {
+            location.assign('/documents/multipack-price.doc');
+        }
     };
 });
 

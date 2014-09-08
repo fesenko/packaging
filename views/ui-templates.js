@@ -1,4 +1,4 @@
-angular.module('ui-templates', ['template/carousel/carousel.html', 'template/views/catalog.html', 'template/views/contacts.html', 'template/views/main.html', 'template/views/prices.html', 'template/views/section.html']);
+angular.module('ui-templates', ['template/carousel/carousel.html', 'template/views/catalog.html', 'template/views/contacts.html', 'template/views/main.html', 'template/views/prices.html']);
 
 angular.module("template/carousel/carousel.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("template/carousel/carousel.html",
@@ -18,21 +18,29 @@ angular.module("template/views/catalog.html", []).run(["$templateCache", functio
     "<div class=\"content\">\n" +
     "    <h1>Каталог продукции</h1>\n" +
     "    <div class=\"catalog\">\n" +
-    "        <div class=\"section\" ng-repeat=\"section in sections\">\n" +
-    "            <a class=\"section__pic\" href=\"#\" ng-class=\"section.id\"></a>\n" +
-    "            <a class=\"section__title\" ng-href=\"#/catalog/{{section.id}}\">{{section.title}}</a>\n" +
-    "            <p>\n" +
-    "                {{section.description}}\n" +
-    "                <a ng-href=\"#/catalog/{{section.id}}\"><nobr>Подробнее »</nobr></a>\n" +
-    "            </p>\n" +
+    "        <div class=\"section-line\" ng-repeat=\"row in sections\">\n" +
+    "            <div class=\"section\" ng-repeat=\"section in row\">\n" +
+    "                <a class=\"section__pic\" href=\"#\" ng-class=\"section.id\"></a>\n" +
+    "                <a class=\"section__title\" ng-href=\"#/catalog/{{section.id}}\">{{section.title}}</a>\n" +
+    "                <p>\n" +
+    "                    {{section.description}}\n" +
+    "                    <a ng-href=\"#/catalog/{{section.id}}\"><nobr>Подробнее »</nobr></a>\n" +
+    "                </p>\n" +
+    "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "</div>");
+    "</div>\n" +
+    "");
 }]);
 
 angular.module("template/views/contacts.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("template/views/contacts.html",
     "<div class=\"content\">\n" +
+    "    <div class=\"pull-right action-btn-container\">\n" +
+    "        <button type=\"button\" class=\"btn btn-default\" ng-click=\"print()\">\n" +
+    "            <span class=\"glyphicon glyphicon-print\"></span> Печать\n" +
+    "        </button>\n" +
+    "    </div>\n" +
     "    <h1>Контактная информация</h1>\n" +
     "    <div class=\"container contact-data\">\n" +
     "        <div class=\"row\">\n" +
@@ -69,11 +77,6 @@ angular.module("template/views/contacts.html", []).run(["$templateCache", functi
     "                Пн – Пт 10:00 – 18:00\n" +
     "            </div>\n" +
     "        </div>\n" +
-    "        <div class=\"row\">\n" +
-    "            <div class=\"col-md-12\">\n" +
-    "                <button type=\"button\" class=\"btn btn-default\" ng-click=\"print()\">Печать</button>\n" +
-    "            </div>\n" +
-    "        </div>\n" +
     "    </div>\n" +
     "    <map x=\"55.717862\" y=\"37.702749\" placemark=\"ООО «МультиПАК»\"></map>\n" +
     "</div>\n" +
@@ -107,11 +110,13 @@ angular.module("template/views/main.html", []).run(["$templateCache", function($
 angular.module("template/views/prices.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("template/views/prices.html",
     "<div class=\"content\">\n" +
-    "    <p class=\"last\" style=\"display: none;\">\n" +
-    "        <span class=\"glyphicon glyphicon-download\"></span> Скачайте <a href=\"/documents/multipack-price.doc\">Прайс-лист</a>\n" +
-    "    </p>\n" +
+    "    <div class=\"pull-right action-btn-container\">\n" +
+    "        <button type=\"button\" class=\"btn btn-default\" ng-click=\"download()\">\n" +
+    "            <span class=\"glyphicon glyphicon-download-alt\"></span> Скачать\n" +
+    "        </button>\n" +
+    "    </div>\n" +
     "    <div class=\"price-category\" ng-repeat=\"category in categories\">\n" +
-    "        <h2 id=\"{{category.code}}\">{{category.name}}, производство – {{category.country}}</h2>\n" +
+    "        <h1 anchor=\"{{category.anchor}}\">{{category.name}}, производство – {{category.country}}</h1>\n" +
     "\n" +
     "        <table class=\"table table-striped prices\" ng-repeat=\"kind in category.kinds\">\n" +
     "            <thead>\n" +
@@ -138,11 +143,6 @@ angular.module("template/views/prices.html", []).run(["$templateCache", function
     "            </tbody>\n" +
     "        </table>\n" +
     "    </div>\n" +
-    "</div>");
-}]);
-
-angular.module("template/views/section.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("template/views/section.html",
-    "<div class=\"content\">\n" +
-    "</div>");
+    "</div>\n" +
+    "");
 }]);
