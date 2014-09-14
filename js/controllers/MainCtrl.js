@@ -9,6 +9,8 @@ define([], function() {
         }, {
             image: 'img/slides/slide4.png'
         }, {
+            image: 'img/slides/slide5.png'
+        }, {
             image: 'img/slides/slide3.png'
         }];
     };
