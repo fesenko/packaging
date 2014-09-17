@@ -2,12 +2,21 @@
   font-size: 1em;
   overflow: hidden;
   margin-top: 15px;
+  position: relative;
   margin-bottom: 20px;
   color: rgb(105, 95, 75);
+  height: 98px;
 
   .info {
-    margin-left: 363px;
+    position: absolute;
+    left: 363px;
+    right: 15px;
     overflow: hidden;
+  }
+
+  .logo {
+    position: absolute;
+    left:15px;
   }
 }
 
