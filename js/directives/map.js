@@ -3,13 +3,13 @@ define(['maps'], function(maps) {
 
     return function($timeout) {
         return {
-            restrict: 'E',
+            restrict: 'A',
             link: function(scope, elem, attrs) {
                 var x = attrs.x || 55.733835;
                 var y = attrs.y || 37.588227;
                 var placemark = attrs.placemark;
 
-                function onReady() {
+                maps.ready(function() {
                     var map = new maps.Map(elem[0], {
                         center: [x, y],
                         zoom: 15
@@ -28,9 +28,7 @@ define(['maps'], function(maps) {
 
                         map.geoObjects.add(placemarkObj);
                     }
-                }
-
-                maps.ready(onReady);
+                });
             }
         }
     }

@@ -78,7 +78,8 @@ angular.module("template/views/contacts.html", []).run(["$templateCache", functi
     "            </div>\n" +
     "        </div>\n" +
     "    </div>\n" +
-    "    <map x=\"55.717862\" y=\"37.702749\" placemark=\"ООО «МультиПАК»\"></map>\n" +
+    "    <div x=\"55.717862\" y=\"37.702749\" placemark=\"ООО «МультиПАК»\" class=\"map-container\"\n" +
+    "        style=\"width: 1030px; height: 500px;\" map></div>\n" +
     "</div>\n" +
     "");
 }]);
