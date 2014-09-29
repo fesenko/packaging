@@ -20,7 +20,7 @@ angular.module("template/views/catalog.html", []).run(["$templateCache", functio
     "    <div class=\"catalog\">\n" +
     "        <div class=\"section-line\" ng-repeat=\"row in sections\">\n" +
     "            <div class=\"section\" ng-repeat=\"section in row\">\n" +
-    "                <a class=\"section__pic\" href=\"#\" ng-class=\"section.id\"></a>\n" +
+    "                <a class=\"section__pic\" href=\"#/catalog/{{section.id}}\" ng-class=\"section.id\"></a>\n" +
     "                <a class=\"section__title\" ng-href=\"#/catalog/{{section.id}}\">{{section.title}}</a>\n" +
     "                <p>\n" +
     "                    {{section.description}}\n" +

@@ -30,6 +30,9 @@ define(['app'], function (app) {
                 .when('/catalog/vacuum_packages', {
                     templateUrl: 'views/catalog/vacuum_packages.html'
                 })
+                .when('/catalog/film_pof', {
+                    templateUrl: 'views/catalog/film_pof.html'
+                })
                 .when('/prices/:type', {
                     controller: 'PricesCtrl',
                     templateUrl: 'views/prices.html'
