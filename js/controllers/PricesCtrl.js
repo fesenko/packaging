@@ -14,7 +14,7 @@ define([], function() {
             });
 
         $scope.download = function() {
-            location.assign('/documents/multipack-price.doc');
+            location.assign('/documents/multipack-price_2015.doc');
         }
     };
 });

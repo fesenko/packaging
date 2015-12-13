@@ -15,7 +15,7 @@
                             "color": "шампань",
                             "article": "Р890",
                             "weight": 2,
-                            "price": 255.00,
+                            "price": 413.00,
                             "thickness": 8
                         },
                         {
@@ -24,7 +24,7 @@
                             "color": "шампань",
                             "article": "Р890",
                             "weight": 2.24,
-                            "price": 286.00,
+                            "price": 462.00,
                             "thickness": 8
                         },
                         {
@@ -33,7 +33,7 @@
                             "color": "шампань",
                             "article": "Р890",
                             "weight": 2.40,
-                            "price": 306,
+                            "price": 495.00,
                             "thickness": 8
                         },
                         {
@@ -42,7 +42,7 @@
                             "color": "шампань",
                             "article": "Р890",
                             "weight": 2.80,
-                            "price": 357.00,
+                            "price": 578.00,
                             "thickness": 8
                         },
                         {
@@ -51,7 +51,7 @@
                             "color": "шампань",
                             "article": "Р890",
                             "weight": 3.04,
-                            "price": 388.00,
+                            "price": 627.00,
                             "thickness": 8
                         },
                         {
@@ -60,7 +60,7 @@
                             "color": "шампань",
                             "article": "Р890",
                             "weight": 3.15,
-                            "price": 408.00,
+                            "price": 660.00,
                             "thickness": 8
                         },
                         {
@@ -69,7 +69,7 @@
                             "color": "шампань",
                             "article": "Р890",
                             "weight": 3.40,
-                            "price": 439.00,
+                            "price": 710.00,
                             "thickness": 8
                         },
                         {
@@ -78,7 +78,7 @@
                             "color": "шампань",
                             "article": "Р890",
                             "weight": 3.55,
-                            "price": 459.00,
+                            "price": 743.00,
                             "thickness": 8
                         },
                         {
@@ -87,7 +87,7 @@
                             "color": "шампань",
                             "article": "Р1415",
                             "weight": 8.80,
-                            "price": 1144.00,
+                            "price": 1848.00,
                             "thickness": 12.5
                         },
                         {
@@ -96,7 +96,7 @@
                             "color": "шампань",
                             "article": "Р1390",
                             "weight": 5.55,
-                            "price": 722.00,
+                            "price": 1166.00,
                             "thickness": 12.5
                         },
                         {
@@ -105,7 +105,7 @@
                             "color": "шампань",
                             "article": "Р1313",
                             "weight": 9.00,
-                            "price": 1170.00,
+                            "price": 1890.00,
                             "thickness": 12.5
                         },
                         {
@@ -114,7 +114,7 @@
                             "color": "шампань",
                             "article": "Р1490",
                             "weight": 6.20,
-                            "price": 806.00,
+                            "price": 1302.00,
                             "thickness": 14
                         }
                     ]
@@ -135,7 +135,7 @@
                             "color": "шампань",
                             "article": "TY880",
                             "weight": 3.40,
-                            "price": 429.00,
+                            "price": 612.00,
                             "thickness": 10
                         },
                         {
@@ -144,7 +144,7 @@
                             "color": "шампань",
                             "article": "TY1015",
                             "weight": 7.00,
-                            "price": 882.00,
+                            "price": 1260.00,
                             "thickness": 10
                         }
                     ]
@@ -166,7 +166,7 @@
                             "color": "шампань",
                             "article": "MN7844CE125",
                             "weight": 4.20,
-                            "price": 599.00,
+                            "price": 1092.00,
                             "thickness": 12.5
                         },
                         {
@@ -175,7 +175,7 @@
                             "color": "шампань",
                             "article": "MN7844CE125",
                             "weight": 5.25,
-                            "price": 749.00,
+                            "price": 1365.00,
                             "thickness": 12.5
                         },
                         {
@@ -184,7 +184,7 @@
                             "color": "шампань",
                             "article": "MN7844CE125",
                             "weight": 6.30,
-                            "price": 899.00,
+                            "price": 1638.00,
                             "thickness": 12.5
                         },
                         {
@@ -193,7 +193,7 @@
                             "color": "шампань",
                             "article": "MN7844CE125",
                             "weight": 7.35,
-                            "price": 1049.00,
+                            "price": 1911.00,
                             "thickness": 12.5
                         },
                         {
@@ -202,7 +202,7 @@
                             "color": "шампань",
                             "article": "MN7844CE5",
                             "weight": 3.00,
-                            "price": 429.00,
+                            "price": 783.00,
                             "thickness": 15
                         },
                         {
@@ -211,7 +211,7 @@
                             "color": "шампань",
                             "article": "MN7844CE5",
                             "weight": 4.00,
-                            "price": 572.00,
+                            "price": 1043.00,
                             "thickness": 15
                         },
                         {
@@ -220,7 +220,7 @@
                             "color": "шампань",
                             "article": "MN7844CE5",
                             "weight": 5.00,
-                            "price": 715.00,
+                            "price": 1304.00,
                             "thickness": 15
                         },
                         {
@@ -229,7 +229,7 @@
                             "color": "шампань",
                             "article": "MN7844CE5",
                             "weight": 6.00,
-                            "price": 858.00,
+                            "price": 1565.00,
                             "thickness": 15
                         },
                         {
@@ -238,7 +238,7 @@
                             "color": "шампань",
                             "article": "MN7844CE5",
                             "weight": 7.00,
-                            "price": 999.00,
+                            "price": 1825.00,
                             "thickness": 15
                         },
                         {
@@ -247,7 +247,7 @@
                             "color": "шампань",
                             "article": "MN7844CE5",
                             "weight": 8.00,
-                            "price": 1142.00,
+                            "price": 2086.00,
                             "thickness": 15
                         },
                         {
@@ -256,7 +256,7 @@
                             "color": "шампань",
                             "article": "MN7844CE5",
                             "weight": 9.00,
-                            "price": 1285.00,
+                            "price": 2347.00,
                             "thickness": 15
                         },
                         {
@@ -265,7 +265,7 @@
                             "color": "шампань",
                             "article": "MN7844CE5",
                             "weight": 10.00,
-                            "price": 1428.00,
+                            "price": 2608.00,
                             "thickness": 15
                         },
                         {
@@ -274,7 +274,7 @@
                             "color": "шампань",
                             "article": "MN7844CE190",
                             "weight": 11.10,
-                            "price": 1599.00,
+                            "price": 2886.00,
                             "thickness": 19
                         },
                         {
@@ -283,7 +283,7 @@
                             "color": "шампань",
                             "article": "MN7844CE190",
                             "weight": 12.30,
-                            "price": 1759.00,
+                            "price": 3198.00,
                             "thickness": 19
                         }
                     ]
@@ -304,7 +304,7 @@
                             "color": "белый",
                             "article": "450*17*1,5",
                             "weight": 1.50,
-                            "price": 132.00,
+                            "price": 239.00,
                             "thickness": 17
                         },
                         {
@@ -312,7 +312,7 @@
                             "color": "белый",
                             "article": "450*17*2,0",
                             "weight": 2.00,
-                            "price": 176.00,
+                            "price": 299.00,
                             "thickness": 17
                         },
                         {
@@ -320,7 +320,7 @@
                             "color": "белый",
                             "article": "500*17*1,5",
                             "weight": 1.50,
-                            "price": 132.00,
+                            "price": 239.00,
                             "thickness": 17
                         },
                         {
@@ -328,7 +328,7 @@
                             "color": "белый",
                             "article": "500*17*2,0",
                             "weight": 2.00,
-                            "price": 176.00,
+                            "price": 299.00,
                             "thickness": 17
                         },
                         {
@@ -336,7 +336,7 @@
                             "color": "белый",
                             "article": "500*23",
                             "weight": 13.50,
-                            "price": 1259.00,
+                            "price": 1620.00,
                             "thickness": 23
                         }
                     ]
