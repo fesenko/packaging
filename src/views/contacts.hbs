@@ -1,0 +1,52 @@
+{{> header}}
+
+<div class="content">
+    <div class="pull-right action-btn-container">
+        <button id="print-btn" type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-print"></span> Печать
+        </button>
+    </div>
+    <h1>Контактная информация</h1>
+    <div class="container contact-data">
+        <div class="row">
+            <div class="col-md-2">
+                <strong>Адрес</strong>
+            </div>
+            <div class="col-md-10">
+                115088, Россия, Москва, улица Угрешская, дом 26 (Продбаза «Покоторг»)
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <strong>Телефоны</strong>
+            </div>
+            <div class="col-md-10">
+                +7 (495) 363-2919<br/>
+                +7 (495) 679-9448<br/>
+                +7 (916) 173-6863
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <strong>Электронная почта</strong>
+            </div>
+            <div class="col-md-10">
+                <a href="mailto:info@mnogoplenki.ru">info@mnogoplenki.ru</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <strong>Часы работы</strong>
+            </div>
+            <div class="col-md-10">
+                Пн – Пт 10:00 – 18:00
+            </div>
+        </div>
+    </div>
+    <div class="map-container" style="width: 1030px; height: 500px;" id="map"></div>
+</div>
+
+<script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+<script src="js/contacts.js"></script>
+
+{{> footer}}

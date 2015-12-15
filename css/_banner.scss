@@ -30,6 +30,7 @@
     z-index: 2;
     background-image: url('../img/arrows.png');
     background-repeat: no-repeat;
+    opacity: 1;
   }
 
   .arrow:hover {
@@ -46,6 +47,7 @@
   .arrow-right {
     top: 50%;
     right: 0;
+    left: auto;
     margin-top: -30px;
     background-position: 0 0;
   }
@@ -60,6 +62,7 @@
   }
 
   .marker {
+    border: none;
     margin: 0 2px;
     padding: 0;
     position: relative;
@@ -70,9 +73,11 @@
     background-image: url('../img/markers.png');
     background-repeat: no-repeat;
     background-position: -14px 0;
+    list-style-position: inside;
+
   }
 
-  .marker.selected {
+  .marker.active {
     background-position: 0 0;
   }
 }

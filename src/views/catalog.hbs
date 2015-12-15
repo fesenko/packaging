@@ -1,0 +1,23 @@
+{{> header}}
+
+<div class="content">
+    <h1>Каталог продукции</h1>
+    <div class="catalog">
+        {{#each sections}}
+        <div class="section-line">
+            {{#each columns}}
+            <div class="section">
+                <a class="section__pic {{id}}" href="/catalog/{{id}}.html"></a>
+                <a class="section__title" href="/catalog/{{id}}.html">{{title}}</a>
+                <p>
+                    {{description}}
+                    <a href="/catalog/{{id}}.html"><nobr>Подробнее »</nobr></a>
+                </p>
+            </div>
+            {{/each}}
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+{{> footer}}
