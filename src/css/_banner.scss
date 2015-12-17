@@ -1,0 +1,83 @@
+.banner {
+  background-color: #ffffff;
+  background-size: 100% auto;
+  background-position: 0 20%;
+  background-repeat:no-repeat;
+  margin-bottom: 65px;
+  position: relative;
+}
+
+.banner:before {
+  background-image: url('../img/banner_shadow.png');
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  content: '';
+  width: 100%;
+  height: 55px;
+  left: 0;
+  bottom: -55px;
+  position: absolute;
+}
+
+.banner {
+  .arrow {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 29px;
+    height: 53px;
+    z-index: 2;
+    background-image: url('../img/arrows.png');
+    background-repeat: no-repeat;
+    opacity: 1;
+  }
+
+  .arrow:hover {
+    cursor: pointer;
+  }
+
+  .arrow-left {
+    top: 50%;
+    left: 0;
+    margin-top: -30px;
+    background-position: -29px 0;
+  }
+
+  .arrow-right {
+    top: 50%;
+    right: 0;
+    left: auto;
+    margin-top: -30px;
+    background-position: 0 0;
+  }
+
+  .markers {
+    width:100%;
+    margin:auto;
+    position: absolute;
+    left: 0;
+    bottom: -45px;
+    text-align: center;
+  }
+
+  .marker {
+    border: none;
+    margin: 0 2px;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    background-image: url('../img/markers.png');
+    background-repeat: no-repeat;
+    background-position: -14px 0;
+    list-style-position: inside;
+
+  }
+
+  .marker.active {
+    background-position: 0 0;
+  }
+}
