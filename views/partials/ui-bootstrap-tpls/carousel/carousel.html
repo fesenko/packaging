@@ -1,9 +1,0 @@
-<div ng-mouseenter="pause()" ng-mouseleave="play()" class="carousel banner" ng-swipe-right="prev()" ng-swipe-left="next()">
-    <div class="carousel-inner" ng-transclude></div>
-    <div class="arrow arrow-left" ng-click="prev()" ng-show="slides.length > 1"></div>
-    <div class="arrow arrow-right" ng-click="next()" ng-show="slides.length > 1"></div>
-    <div class="markers" ng-show="slides.length > 1">
-        <i class="marker" ng-class="{selected: isActive(slide)}"
-           ng-repeat="slide in slides track by $index" ng-click="select(slide)"></i>
-    </div>
-</div>

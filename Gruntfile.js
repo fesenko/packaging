@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+    require('./src/helpers/number.js');
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -6,7 +7,7 @@ module.exports = function(grunt) {
         mkdir: {
             all: {
                 options: {
-                    create: ['build/catalog']
+                    create: ['build']
                 }
             }
         },
@@ -19,19 +20,21 @@ module.exports = function(grunt) {
                     'sourcemap=none': ''
                 },
                 files: {
-                    'build/css/global.css': 'css/global.scss'
+                    'build/css/global.css': 'src/css/global.scss'
                 }
             }
         },
 
-        clean: ['./build/'],
+        clean: ['./build/**/*'],
 
         copy: {
             main: {
                 files: [
                     { expand: true, src: ['img/**'], dest: 'build/' },
-                    { expand: true, src: ['css/*.css'], dest: 'build/' },
-                    { expand: true, cwd: 'src/js/', src: ['*'], dest: 'build/js/' }
+                    { expand: true, cwd: 'src/css/', src: ['*.css'], dest: 'build/css/' },
+                    { expand: true, cwd: 'src/js/', src: ['*'], dest: 'build/js/' },
+                    { expand: true, cwd: 'doc/', src: ['*'], dest: 'build/doc/' },
+                    { expand: true, cwd: 'src/', src: ['*.*', 'Sitemap', '.htaccess'], dest: 'build/' }
                 ]
             }
         },
@@ -72,13 +75,31 @@ module.exports = function(grunt) {
                     src: 'src/views/contacts.hbs',
                     dest: 'build/contacts.html'
                 }, {
-                    src: 'src/views/*/*.hbs',
-                    dest: 'build/catalog/',
-                    ext: '.html'
+                    src: 'src/views/catalog/checks.hbs',
+                    dest: './build/catalog/checks.html',
+                }, {
+                    src: 'src/views/catalog/containers.hbs',
+                    dest: './build/catalog/containers.html',
+                }, {
+                    src: 'src/views/catalog/film_pof.hbs',
+                    dest: './build/catalog/film_pof.html',
+                }, {
+                    src: 'src/views/catalog/food_stretch.hbs',
+                    dest: './build/catalog/food_stretch.html',
+                }, {
+                    src: 'src/views/catalog/pallet_stretch.hbs',
+                    dest: './build/catalog/pallet_stretch.html',
+                }, {
+                    src: 'src/views/catalog/shrink.hbs',
+                    dest: './build/catalog/shrink.html',
+                }, {
+                    src: 'src/views/catalog/vacuum_packages.hbs',
+                    dest: './build/catalog/vacuum_packages.html',
                 }],
                 partials: [
                     'src/views/header.hbs',
-                    'src/views/footer.hbs'
+                    'src/views/footer.hbs',
+                    'src/views/metrika.hbs'
                 ],
                 templateData: ''
             },
@@ -86,8 +107,14 @@ module.exports = function(grunt) {
                 files: [{
                     src: 'src/views/catalog.hbs',
                     dest: 'build/catalog.html'
+                }, {
+                    src: 'src/views/prices.hbs',
+                    dest: 'build/prices.html'
                 }],
-                templateData: require('./data/catalog.json')
+                templateData: {
+                    catalog: require('./data/catalog.json'),
+                    price: require('./data/prices.json')
+                }
             }
         }
     });
@@ -99,22 +126,10 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-compile-handlebars');
 
-    grunt.registerTask('compile-handlebars', function() {
-        grunt.task.requires('mkdir');
-    });
-
-    grunt.registerTask('mkdir', function() {
+    grunt.registerTask('build', function() {
         grunt.task.requires('clean');
-        console.log(grunt.task);
+        grunt.task.run(['sass', 'copy', 'compile-handlebars', 'bower']);
     });
 
-    grunt.registerTask('sass', function() {
-        grunt.task.requires('clean');
-    });
-
-    grunt.registerTask('copy', function() {
-        grunt.task.requires('clean');
-    });
-
-    grunt.registerTask('default', ['clean', 'mkdir', 'sass', 'compile-handlebars', 'copy']);
+    grunt.registerTask('default', ['clean', 'build']);
 };

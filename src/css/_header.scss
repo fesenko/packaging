@@ -46,6 +46,16 @@
     color: #033e6f;
     text-decoration: underline;
   }
+
+  a.active {
+    text-decoration: none;
+
+  }
+
+  a.active:hover {
+    cursor: default;
+
+  }
 }
 
 .top-menu-contacts {

@@ -1,0 +1,51 @@
+{{> header isPricePage=true}}
+
+<div class="content">
+    <div class="pull-right action-btn-container">
+        <button id="download-btn" type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-download-alt"></span> Скачать
+        </button>
+    </div>
+    {{#each price.categories}}
+    <div class="price-category">
+        <a name="{{anchor}}"></a>
+        <h1>{{name}}, производство – {{country}}</h1>
+        {{#each kinds}}
+        <table class="table table-striped prices">
+            <thead>
+                <tr class="{{../color_type}}">
+                    <th>Ширина,<br>мм</th>
+                    <th>Толщина,<br>мкм</th>
+                    {{#if ../length_column}}
+                    <th>Длина,<br>м</th>
+                    {{/if}}
+                    <th>Цвет</th>
+                    <th>Артикул<br>(этикетка)</th>
+                    <th>Вес нетто<br>(без учета веса<br>шпули), кг</th>
+                    <th>Цена за 1 рулон,<br>включая НДС, руб</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each items}}
+                <tr>
+                    <td>{{width}}</td>
+                    <td>{{thickness}}</td>
+                    {{#if ../../length_column}}
+                    <td>{{length}}</td>
+                    {{/if}}
+                    <td>{{color}}</td>
+                    <td>{{article}}</td>
+                    <td>{{decimal weight}}</td>
+                    <td>{{decimal price}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+        {{/each}}
+    </div>
+    {{/each}}
+</div>
+
+<script src="/js/prices.js"></script>
+
+{{> footer}}
