@@ -50,7 +50,7 @@ module.exports = function(grunt) {
                         jquery: {
                             keepExpandedHierarchy: false,
                             files: [
-                                'dist/jquery.min.js'
+                                'dist/jquery.js'
                             ]
                         },
                         bootstrap: {
