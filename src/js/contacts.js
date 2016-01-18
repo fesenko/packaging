@@ -1,23 +1,12 @@
-(function () {
-    var elem = $('#map')[0];
+window.onload = function () {
+    YMaps.jQuery(function() {
+        var map = new YMaps.Map(YMaps.jQuery("#map")[0]);
+        map.setCenter(new YMaps.GeoPoint(37.702749, 55.717862), 15);
 
-  ymaps.ready(function() {
-    var map = new ymaps.Map(elem, {
-        center: [55.717862, 37.702749],
-        zoom: 15
-    });
-
-    var placemarkObj = new ymaps.Placemark(map.getCenter(), {
-        balloonContentBody: [
-            '<address>',
-                '<strong>ООО «МультиПАК»</strong>',
-            '</address>'
-        ].join('')
-    }, {
-        preset: 'islands#brownDotIcon'
-    });
-
-    map.geoObjects.add(placemarkObj);
+        var placemarkObj = new YMaps.Placemark(map.getCenter());
+        placemarkObj.name = 'ООО «МультиПАК»';
+        map.addOverlay(placemarkObj);
+        placemarkObj.openBalloon();
     });
 
     $('#print-btn').on('click', function() {
@@ -25,5 +14,4 @@
 
       popup.print();
     });
-
-})();
+};
