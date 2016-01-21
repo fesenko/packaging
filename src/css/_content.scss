@@ -135,6 +135,15 @@ table.prices {
   .section__pic.film_pof {
     background-image: url('../img/catalog/film_pof/main.jpg');
   }
+  .section__pic.labels {
+    background-image: url('../img/catalog/labels/main.jpg');
+  }
+  .section__pic.containers_ps {
+    background-image: url('../img/catalog/containers_ps/main.jpg');
+  }
+  .section__pic.stretch_wrap {
+    background-image: url('../img/catalog/stretch_wrap/main.jpg');
+  }
 }
 
 .catalog-pic {
@@ -155,11 +164,11 @@ table.prices {
   margin-top: 20.64px;
 }
 
-.checks-example{
+.checks-example, labels-example {
   overflow:hidden;
   position:relative
 }
-.checks-example img{
+.checks-example img, labels-example img {
   display:inline-block;
   float:left;
   margin:10px 2%;
