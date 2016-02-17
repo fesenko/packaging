@@ -95,6 +95,15 @@ module.exports = function(grunt) {
                 }, {
                     src: 'src/views/catalog/vacuum_packages.hbs',
                     dest: './build/catalog/vacuum_packages.html',
+                }, {
+                    src: 'src/views/catalog/containers_ps.hbs',
+                    dest: './build/catalog/containers_ps.html',
+                }, {
+                    src: 'src/views/catalog/labels.hbs',
+                    dest: './build/catalog/labels.html',
+                }, {
+                    src: 'src/views/catalog/stretch_wrap.hbs',
+                    dest: './build/catalog/stretch_wrap.html',
                 }],
                 partials: [
                     'src/views/header.hbs',
