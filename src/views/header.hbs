@@ -63,6 +63,13 @@
                         {{/if}}
                     </li>
                     <li>
+                        {{#if isDeliveryPage}}
+                            <a class="active">Доставка</a>
+                        {{else}}
+                            <a href="/delivery.html">Доставка</a>
+                        {{/if}}
+                    </li>
+                    <li>
                         {{#if isContactsPage}}
                             <a class="active">Контакты</a>
                         {{else}}
