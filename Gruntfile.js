@@ -74,6 +74,9 @@ module.exports = function(grunt) {
                 }, {
                     src: 'src/views/contacts.hbs',
                     dest: 'build/contacts.html'
+                },{
+                    src: 'src/views/delivery.hbs',
+                    dest: 'build/delivery.html'
                 }, {
                     src: 'src/views/catalog/checks.hbs',
                     dest: './build/catalog/checks.html',
@@ -108,7 +111,8 @@ module.exports = function(grunt) {
                 partials: [
                     'src/views/header.hbs',
                     'src/views/footer.hbs',
-                    'src/views/metrika.hbs'
+                    'src/views/metrika.hbs',
+                    'src/views/liveinternet.hbs'
                 ],
                 templateData: ''
             },
