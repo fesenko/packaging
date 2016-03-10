@@ -3,3 +3,4 @@
 vendors
 build/*
 node_modules
+./idea
