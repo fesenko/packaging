@@ -6,7 +6,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>{{title}}</title>
+        {{#if isIndexPage}}
         <meta name="description" content="Термоусадочная пленка пвх, стрейч пленка и другие упаковочные материалы от ведущих европейских и российских производителей.">
+        {{else}}
+        <meta name="description" content="{{description}}">
+        {{/if}}
         <meta name="keywords" content="стрейч, пленка стрейч, пленка пвх, пленка упаковочная стрейч, термоусадочная пленка пвх, термоусадочная пленка, стрейч пленка купить">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
